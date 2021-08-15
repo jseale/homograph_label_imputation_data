@@ -19,12 +19,15 @@ This README is structured using the template provided in [Datasheets for Dataset
 
 ## Motivation
 1. _Why was this dataset created?_
+
 This dataset was created for the purpose of homograph disambiguation modeling done to evaluate the effecitiveness of two types of label imputation for homograph disambiguation: 1) label imputation from transcribed audio of conversational speech, 2) label imputation from parallel corpora. In the experiments, machine learning models are trained using the WHD train and dev splits alone, and then trained with the various train splits augmented using either label-imputed or hand-labeled data (and the non-augmented dev split) for comparison. The WHD-only test split is held out in order to report final metrics.
 
-2. _Has this dataset been used for any tasks already? If so, what (other) tasks could this dataset be used for?_ 
+2. _Has this dataset been used for any tasks already? If so, what (other) tasks could this dataset be used for?_
+ 
 For the ALBERT, BERT, and XLNet models trained in the dissertation, the task is framed as token classification, or NER. The task could also be framed as homograph pronunciation classification.
 
 3l _Who funded the creation of the dataset?_
+
 This dataset was created during the dissertation of CUNY Graduate Center doctoral candidate, Jen Seale, whose studies at the university were primarily funded through a Presidential Research Fellowship. 
 
 ## Dataset composition
@@ -61,6 +64,9 @@ In the dissertation associated with this data, different machine learning models
 
 ## Data collection process
 1. _How was the data collected?_
+
+This question is answered in three subsections---the first covers the Wikipedia Homograph Data, the second explains the label imputation process by which the labeled data from the Switchboard (SWBD) corpus was generated, and the third explains the label imputation process which was used to generate labeled data from the French English Europarl data.
+
 **WHD**
 The WHD was obtained by a team at Google from Wikipedia text using a random sampling procedure to obtain sentences homographs that were subsequently labeled for pronunciation by 4 annotators. This data was made publically available through Github and subsequently used in dissertation experimentation. The original WHD contains two splits, train and eval, with 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples. For this version of the WHD, the two splits are combined. Data associated with 34 of those homographs is then removed due to either invariance in pronunciation or prohibitively low sample size. The remaining data is split into three splits in order to develop models using a train and dev set, and provide performance metrics on a test set.
 
