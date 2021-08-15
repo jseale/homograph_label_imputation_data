@@ -6,7 +6,7 @@ This README is structured using the template provided in [Datasheets for Dataset
 ## Motivation
 1. _Why was this dataset created?_
 
-    This dataset was created for the purpose of homograph disambiguation modeling done to evaluate the effecitiveness of two types of label imputation for homograph disambiguation: 1) label imputation from transcribed audio of conversational speech, 2) label imputation from parallel corpora. In the experiments, machine learning models are trained using the WHD train and dev splits alone, and then trained with the various train splits augmented using either label-imputed or hand-labeled data (and the non-augmented dev split) for comparison. The WHD-only test split is held out in order to report final metrics.
+    This dataset was created for the purpose of homograph disambiguation modeling done to evaluate the effectiveness of two types of label imputation for homograph disambiguation: 1) label imputation from transcribed audio of conversational speech, 2) label imputation from parallel corpora. In the experiments, machine learning models are trained using the WHD train and dev splits alone, and then trained with the various train splits augmented using either label-imputed or hand-labeled data (and the non-augmented dev split) for comparison. The WHD-only test split is held out in order to report final metrics.
 
 2. _Has this dataset been used for any tasks already? If so, what (other) tasks could this dataset be used for?_
  
