@@ -279,4 +279,4 @@ Masoud, Jalili Sabet et al. (Nov. 2020). “SimAlign: High quality word alignmen
 
 McAuliffe, Michael et al. (2017). “Montreal Forced Aligner: Trainable text-speech alignment using Kaldi.” In: Interspeech. Vol. 2017, pp. 498–502. URL: https://www.researchgate.net/profile/Morgan_Sonderegger/publication/319185277_Montreal_Forced_Aligner_Trainable_Text-Speech_Alignment_Using_Kaldi/links/59b84d450f7e9bc4ca393755/Montreal-Forced-Aligner-Trainable-Text-Speech-Alignment-Using-Kaldi.pdf.
 
-Rabiner, Lawrence and Biing-Hwang Juang (1993).Fundamentals of Speech Recognition.Englewood Cliffs, New Jersey: Prentice-Hall.
+Rabiner, Lawrence and Biing-Hwang Juang (1993). Fundamentals of Speech Recognition. Englewood Cliffs, New Jersey: Prentice-Hall.
