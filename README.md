@@ -28,15 +28,12 @@ This README is structured using the template provided in [Datasheets for Dataset
     Three additional train splits exist: train_euro, train_swbd, and train_swbd_hand, each of which add data to the same  2719 WHD train samples in the train split. 
 
     **train_euro data**
-    
     The train_euro split augments the WHD with 718 samples from the French English Europarl corpus for a total of 3437 train samples. The Europarl samples are labeled using the Alignment-to-Pronunciation (AP) label imputation technique developed in the dissertation, which depends on the presence of disjoint sets of interlingual text word forms that align to homograph pronunciations.
 
     **train_swbd data**
-    
     The train_swbd split augments the WHD with 147 samples from the Switchboard corpus for a total of 2866 train samples. The SWBD samples are labeled using label imputation from transcribed audio, developed in the dissertation as the first recorded attempt of its kind.
 
     **train_swbd_hand data**
-    
     The train_swbd_hand split augments the WHD with 322 samples from the Switchboard corpus for a total of 3041 train samples. The SWBD samples are labeled by hand during the process of label imputation from transcribed audio. The data from the imputation process contains fewer samples due to overlap in imputed labels between homograph pronunciations. For example, the imputed pronunciations for _excuse_, as in "an excuse to do", which should all be mappable to /ək'skju:s/, also contain pronunciations that map to this homograph's alternate pronunciation, /ək'skju:z/.
 
 3. _Is everything included or does the data rely on external resources?_
@@ -57,7 +54,6 @@ This README is structured using the template provided in [Datasheets for Dataset
      This question is answered in three subsections---the first covers the Wikipedia Homograph Data, the second explains the label imputation process by which the labeled data from the Switchboard (SWBD) corpus was generated, and the third explains the label imputation process which was used to generate labeled data from the French English Europarl data.
 
     **WHD**
-    
     The WHD was obtained by a team at Google from Wikipedia text using a random sampling procedure to obtain sentences homographs that were subsequently labeled for pronunciation by 4 annotators. This data was made publically available through Github and subsequently used in dissertation experimentation. The original WHD contains two splits, train and eval, with 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples. For this version of the WHD, the two splits are combined. Data associated with 34 of those homographs is then removed due to either invariance in pronunciation or prohibitively low sample size. The remaining data is split into three splits in order to develop models using a train and dev set, and provide performance metrics on a test set.
 
     I. Invariant homographs 
