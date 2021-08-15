@@ -2,14 +2,17 @@
 This repository contains data from the Wikipedia Homograph Data (WHD; Gorman et al., 2018), the Switchboard (SWBD; Godfrey et al., 1992) corpus, and the Europarl French English corpus (Koehn, 2005). The data has been created for use in experiments performed to test the efficacy of two homograph label imputation techniques developed in Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited in September 2021. 
 
 The Wikipedia Homograph Data is described in: 
+
 Gorman, K., Mazovetskiy, G., and Nikolaev, V. (2018). [Improving homograph disambiguation with machine learning](https://aclanthology.org/L18-1215/). In Proceedings of the Eleventh International Conference on Language Resources and Evaluation, pages 1349-1352. Miyazaki, Japan.
 
 The original WHD lives [here](https://github.com/google/WikipediaHomographData). 
 
 The Switchboard corpus is described in: 
+
 Godfrey, John J., Edward C. Holliman, and Jane McDaniel (1992). [SWITCHBOARD: Telephone speech corpus for research and development](https://dl.acm.org/doi/10.5555/1895550.1895693). In: Acoustics, Speech, and Signal Processing, IEEE International Conference on. Vol. 1. IEEE Computer Society, pp. 517–520
 
 The Europarl corpus is described in:
+
 Koehn, Philipp (2005). [Europarl: A parallel corpus for statistical machine translation](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.459.5497&rep=rep1&type=pdf). In: Citeseer. 
 
 This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics.
