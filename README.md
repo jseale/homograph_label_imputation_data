@@ -1,5 +1,5 @@
 # Dissertation data
-This repository contains data from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard (SWBD; Godfrey et al., 1992) corpus, and the French English Europarl corpus (Koehn, 2005). The data has been created for use in experiments performed to test the efficacy of two homograph label imputation techniques developed in Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited in September 2021. 
+This repository contains data from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard (SWBD; Godfrey et al., 1992) corpus, and the French English Europarl corpus (Koehn, 2005). The datasets have been created for use in experiments performed to test the efficacy of two homograph label imputation techniques developed in Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited in September 2021. 
 
 This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics.
 
