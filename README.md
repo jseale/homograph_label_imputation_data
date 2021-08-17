@@ -6,7 +6,7 @@ The datasets in this repo were generated during the dissertation work of Jen Sea
 There are four folders of data in this repo: 
 1) `Dissertation_Experiment_Data` contains the homograph disambiguation data used in dissertation experimentation.
 2) `3_Split_WHD` contains a subset of the WHD that ensures each homograph has at least three instances for two pronunciations of each homograph, and the samples are stratified into `train`, `dev`, and `test` splits with additional logic to force at least one sample for each pronunciation in each split. This subset of the WHD contains 128 unique homographs, 256 unique pronunciations and 12,714 samples. The original Wikipedia Homograph Data contains 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples split into `train` and `eval` splits. However, about 20% of the pronunciation classes are not present in the `eval` split. 
-3) `SWBD_Data` contains the full sets of hand-labeled and semi-automatedly labeled Switchboard data generated over the course of the dissertation. 
+3) `SWBD_Data` contains the full set of hand-labeled Switchboard data generated over the course of the dissertation. 
 4) `Europarl_Data` contains the full sets of hand-labeled and semi-automatedly labeled French English Europarl data generated over the course of the dissertation.  
 
 This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics (ACL).
