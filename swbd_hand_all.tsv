@@ -99,7 +99,7 @@
 97	sw02527_s146_1-s146_36.TextGrid	desert	desert_nou	but i do n't think i ever see it except when i go get out of the city and go camping in the desert or in in the mountains
 98	sw03495_s47_1-s47_24.TextGrid	decrease	decrease_nou	uh i guess the other thing was that are causing a lot of the crime now is the decrease in values
 99	sw02012_s121_1-s121_32.TextGrid	deviate	deviate_vrb	if i deviate from social norms of behavior if i run up and down the street yelling or something someone s going to invade my privacy very quickly
-100	sw02334_s184_1-s184_5.TextGrid	discount		i could use a discount
+100	sw02334_s184_1-s184_5.TextGrid	discount	discount_nou	i could use a discount
 101	sw02439_s205_1-s205_11.TextGrid	discount	discount_nou	plus i was going through that t i fleet discount program
 102	sw02611_s123_1-s123_25.TextGrid	discount	discount_nou	and she you know she finds all the outlets and all the discount places and uh buys clothes
 103	sw02554_s275_1-s275_23.TextGrid	discount	discount_nou	so i said yeah if i can have an i b m for forty eight percent discount i <unk> take it
@@ -530,10 +530,10 @@
 528	sw04812_s49_1-s49_16.TextGrid	graduate	graduate_adj-nou	i m a graduate student at u c f in florida university of central florida
 529	sw03090_s178_1-s178_82.TextGrid	graduate	graduate_adj-nou	and i think that that s the way that we looked at it in our beginnings when my husband was in graduate school that there was a light at the end of that tunnel you know that that it was worth it to save and to not have uh something and uh in return know that something better was going to be at the end of it
 530	sw02334_s76_1-s76_12.TextGrid	graduate	graduate_adj-nou	as soon as you <unk> a graduate student they get your name
-531	sw02836_s34_1-s34_18.TextGrid	house		our major crimes in our immediate town uh is probably robberies house robberies
-532	sw04785_s49_1-s49_22.TextGrid	house		you know there s a lot of times my house may not be as clean as i particularly like it
-533	sw03237_s36_1-s36_8.TextGrid	house		so we moved into this house in garland
-534	sw02488_s50_1-s50_38.TextGrid	house		and he said he s had his house broken into and windows smashed and his car stolen three times and everything trying to <unk> keep him quiet
+531	sw02836_s34_1-s34_18.TextGrid	house	house_nou	our major crimes in our immediate town uh is probably robberies house robberies
+532	sw04785_s49_1-s49_22.TextGrid	house	house_nou	you know there s a lot of times my house may not be as clean as i particularly like it
+533	sw03237_s36_1-s36_8.TextGrid	house	house_nou	so we moved into this house in garland
+534	sw02488_s50_1-s50_38.TextGrid	house	house_nou	and he said he s had his house broken into and windows smashed and his car stolen three times and everything trying to <unk> keep him quiet
 535	sw02836_s60_2-s60_24.TextGrid	house	house_nou	they <unk> they <unk> stock your house and uh look at your pattern and then go from there
 536	sw03756_s61_1-s61_7.TextGrid	house	house_nou	what color did you paint your house
 537	sw03080_s153_1-s153_14.TextGrid	house	house_nou	we have a stationary bicycle and a stair step machine here at the house
