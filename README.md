@@ -1,7 +1,15 @@
 # Dissertation data
-This repository contains data from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard corpus (SWBD; Godfrey et al., 1992), and the French English Europarl corpus (Koehn, 2005). The dataset has been created for use in experiments performed to test the efficacy of two homograph label imputation techniques developed in Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited in September 2021. 
+This repository contains data from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard corpus (SWBD; Godfrey et al., 1992), and the French English Europarl corpus (Koehn, 2005). 
 
-This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics.
+The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, is to be deposited in September 2021. 
+
+There are four folders of data in this repo: 
+1) `Dissertation_Experiment_Data` contains the homograph disambiguation data used in dissertation experimentation.
+2) `3_Split_WHD` contains a subset of the WHD that ensures each homograph has at least three instances for two pronunciations of each homograph, and the samples are stratified into `train`, `dev`, and `test` splits with additional logic to force at least one sample for each pronunciation in each split. This subset of the WHD contains 128 unique homographs, 256 unique pronunciations and 12,714 samples. The original Wikipedia Homograph Data contains 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples split into `train` and `eval` splits. However, about 20% of the pronunciation classes are not present in the `eval` split. 
+3) `SWBD_Data` contains the full sets of hand-labeled and semi-automatedly labeled Switchboard data generated over the course of the dissertation. 
+4) `Europarl_Data` contains the full sets of hand-labeled and semi-automatedly labeled French English Europarl data generated over the course of the dissertation.  
+
+This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics (ACL).
 
 ## Motivation
 1. _Why was this dataset created?_
