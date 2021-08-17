@@ -27,7 +27,7 @@ This README is structured using the template provided in [Datasheets for Dataset
 
     3) a text string sentence containing the homograph, found in the `sentence` column of each `tsv`.
     
-    Additional data generated during the dissertation, but not used in its entirety during experimentation is also provided in this repo. Hand-labeled data from the SWBD corpus is available in `swbd_hand_all`, and adds a `file_name` column to the three classes of data listed above, with which you can locate the data in the NXT Switchboard corpus. 
+    Additional data generated during the dissertation, but not used in its entirety during experimentation, is also provided in this repo. Hand-labeled data from the SWBD corpus is available in `swbd_hand_all`, and adds a `file_name` column to the three classes of data listed above, with which you can locate the data in the NXT Switchboard corpus. 
 
 2. _How many instances of each type are there?_
 
