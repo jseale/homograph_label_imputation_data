@@ -20,8 +20,11 @@ This README is structured using the template provided in [Datasheets for Dataset
 1. _What are the instances? What data does each instance consist of?_
 
     Each instance of the data used in the dissertation experiments contains three data points: 
+    
         1) the text string for the homograph, found in the `homograph` column of each `tsv`
-        2) a computationally friendly text string indicating a the pronunciation of the homograph in sentential context, found in the `wordid` column of each `tsv` (adopted from Gorman et al.'s 2018 Wikipedia Homograph Data) 
+
+        2) a computationally friendly text string indicating a the pronunciation of the homograph in sentential context, found in the `wordid` column of each `tsv` (adopted from Gorman et al.'s 2018 Wikipedia Homograph Data)
+
         3) a text string sentence containing the homograph, found in the `sentence` column of each `tsv`.
     
     Additional data generated during the dissertation, but not used in its entirety during experimentation is also provided in this repo. Hand-labeled data from the SWBD corpus is available in `swbd_hand_all`, and adds a `file_name` column to the three classes of data listed above, with which you can locate the data in the NXT Switchboard corpus. 
