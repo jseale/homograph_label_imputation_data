@@ -19,23 +19,26 @@ This README is structured using the template provided in [Datasheets for Dataset
 ## Dataset composition
 1. _What are the instances? What data does each instance consist of?_
 
-    Each instance of the data used in the dissertation experiments contains three data points: 1) the text string for the homograph, 2) a computationally friendly indication of the pronunciation of the homograph in sentential context, a _wordid_, 3) a sentence containing the homograph. 
+    Each instance of the data used in the dissertation experiments contains three data points: 
+        1) the text string for the homograph, found in the {{homograph}} column of each {{tsv}}
+        2) a computationally friendly text string indicating a the pronunciation of the homograph in sentential context, found in the {{wordid}} column of each {{tsv}} (adopted from Gorman et al.'s 2018 Wikipedia Homograph Data) 
+        3) a text string sentence containing the homograph, found in the {{sentence}} column of each {{tsv}}
     
-    Additional data generated during the dissertation, but not used in experimentation is provided. 
+    Additional data generated during the dissertation, but not used in its entirety during experimentation is also provided in this repo. Hand-labeled data from the SWBD corpus is available in {{swbd_hand_all}}, and adds a {{file_name}} column to the three classes of data listed above, with which you can locate the data in the NXT Switchboard corpus. 
 
 2. _How many instances of each type are there?_
 
-    The train, dev, and test data splits contain 3,407 WHD samples. The train split contains 2719 samples, with about 80 samples for each of 34 WHD homographs in the data. The dev split contains 348 samples, with about 10 samples for each of the 34 WHD homographs in the data. The test split has contains 340 samples, with 10 samples for each of the 34 WHD homographs in the data. Stratified sampling is used as the default to maintain class distribution among the splits. This sampling technique is coupled with logic to enforce the presence of at least one sample per class in each split.  Forcing class presence proved necessary due to the more extreme class imbalances present in the data, such as those in which only 3 instances of one of the two homograph pronunciations are available.
+    The {{train}}, {{dev}}, and {{test}} data splits contain 3,407 WHD samples. The {{train}} split contains 2719 samples, with about 80 samples for each of 34 WHD homographs in the data. The {{dev}} split contains 348 samples, with about 10 samples for each of the 34 WHD homographs in the data. The {{test}} split has contains 340 samples, with 10 samples for each of the 34 WHD homographs in the data. Stratified sampling is used as the default to maintain class distribution among the splits. This sampling technique is coupled with logic to enforce the presence of at least one sample per class in each split. Forcing class presence proved necessary due to the more extreme class imbalances present in the data, such as those in which only 3 instances of one of the two homograph pronunciations are available.
 
-    Three additional train splits exist: train_euro, train_swbd, and train_swbd_hand, each of which add data to the same  2719 WHD train samples in the train split. 
+    Three additional train splits used in dissertation experimentation exist: {{train_euro}}, {{train_swbd}}, and {{train_swbd_hand}}, each of which add data to the same 2719 WHD train samples in the train split. 
 
-    **train_euro data**
+    **{{train_euro}} data**
     The train_euro split augments the WHD with 718 samples from the French English Europarl corpus for a total of 3437 train samples. The Europarl samples are labeled using the Alignment-to-Pronunciation (AP) label imputation technique developed in the dissertation, which depends on the presence of disjoint sets of interlingual text word forms that align to homograph pronunciations.
 
-    **train_swbd data**
+    **{{train_swbd}} data**
     The train_swbd split augments the WHD with 147 samples from the Switchboard corpus for a total of 2866 train samples. The SWBD samples are labeled using label imputation from transcribed audio, developed in the dissertation as the first recorded attempt of its kind.
 
-    **train_swbd_hand data**
+    **{{train_swbd_hand}} data**
     The train_swbd_hand split augments the WHD with 322 samples from the Switchboard corpus for a total of 3041 train samples. The SWBD samples are labeled by hand during the process of label imputation from transcribed audio. The data from the imputation process contains fewer samples due to overlap in imputed labels between homograph pronunciations. For example, the imputed pronunciations for _excuse_, as in "an excuse to do", which should all be mappable to /ək'skju:s/, also contain pronunciations that map to this homograph's alternate pronunciation, /ək'skju:z/.
 
 3. _Is everything included or does the data rely on external resources?_
