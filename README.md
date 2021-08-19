@@ -3,7 +3,7 @@ This repository contains data from the [Wikipedia Homograph Data](https://github
 
 The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, is to be deposited in September 2021. 
 
-There are four folders of data in this repo: 
+There are three folders of data in this repo: 
 1) `Dissertation_Experiment_Data` contains the homograph disambiguation data used in dissertation experimentation. There are four different `train` splits, one `dev` and one `test` split. All these splits contain data for 68 pronunciation classes over 34 WHD homographs.
 2) `3_Split_WHD` contains a larger subset of the WHD than that in the dissertation experiment data. The original Wikipedia Homograph Data contains 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples split into `train` and `eval` splits. However, the dataset can be problematic in that there are homographs with only one prounciation, and pronunciations which do not have representation in the test set. The 3 split dataset in this repo contains at least three instances for two pronunciations of each homograph, and the samples are stratified into `train`, `dev`, and `test` splits with at least one sample for each pronunciation in each split. This subset of the WHD contains 128 unique homographs, 256 unique pronunciations and 12,714 samples. 
 3) `SWBD_Data` contains the full set of hand-labeled Switchboard data generated over the course of the dissertation. 
