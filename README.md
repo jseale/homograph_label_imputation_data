@@ -1,5 +1,5 @@
 # Homograph label imputation data
-This repository contains data from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard corpus (SWBD; Godfrey et al., 1992), and the French English Europarl corpus (Koehn, 2005). 
+This repository contains labeled homoograph pronunciation data with sentential context from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard corpus (SWBD; Godfrey et al., 1992), and the French English Europarl corpus (Koehn, 2005). 
 
 The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, is to be deposited in September 2021. 
 
