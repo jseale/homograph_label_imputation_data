@@ -17,7 +17,7 @@ This README is structured using the template provided in [Datasheets for Dataset
 
 2. _Has this dataset been used for any tasks already? If so, what (other) tasks could this dataset be used for?_
  
-    For the ALBERT, BERT, and XLNet models trained in the dissertation, the task is framed as token classification, or NER. The task could also be framed as contextualized homograph pronunciation classification in which the homograph, vectorized with its surrounding text is classified.
+    For the `ALBERT`, `BERT`, and `XLNet` models trained in the dissertation, the task is framed as token classification, or NER. The task could also be framed as contextualized homograph pronunciation classification in which the homograph, vectorized with its surrounding text is classified.
 
 3. _Who funded the creation of the dataset?_
 
