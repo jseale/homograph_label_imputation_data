@@ -54,10 +54,12 @@ The train_swbd split augments the WHD with 147 samples from the Switchboard corp
 The train_swbd_hand split augments the WHD with 322 samples from the Switchboard corpus for a total of 3041 train samples. The SWBD samples are labeled by hand during the process of label imputation from transcribed audio. The data from the imputation process contains fewer samples due to overlap in imputed labels between homograph pronunciations. For example, the imputed pronunciations for _excuse_, as in "an excuse to do", which should all be mappable to /ək'skju:s/, also contain pronunciations that map to this homograph's alternate pronunciation, /ək'skju:z/.
     
 **`EUROPARL_Data`**
+
 `Europarl_Imputed_All`
+
 There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation are:
 
-**homograph wordid  counts**\
+**homograph    wordid    counts**\
 abuse        abuse_nou               332\
              abuse_vrb                22\
 abuses       abuses_nou              169\
