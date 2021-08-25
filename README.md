@@ -37,19 +37,135 @@ This README is structured using the template provided in [Datasheets for Dataset
     Additional data generated during the dissertation, but not used in its entirety during experimentation, is also provided in this repo. Hand-labeled data from the SWBD corpus is available in `swbd_hand_all`, and adds a `file_name` column to the three classes of data listed above, with which you can locate the data in the NXT Switchboard corpus. 
 
 2. _How many instances of each type are there?_
-
+**`Dissertation_Experiment_Data`**
     The `train`, `dev`, and `test` data splits contain 3,407 WHD samples. The `train` split contains 2719 samples, with about 80 samples for each of 34 WHD homographs in the data. The `dev` split contains 348 samples, with about 10 samples for each of the 34 WHD homographs in the data. The `test` split has contains 340 samples, with 10 samples for each of the 34 WHD homographs in the data. Stratified sampling is used as the default to maintain class distribution among the splits. This sampling technique is coupled with logic to enforce the presence of at least one sample per class in each split. Forcing class presence proved necessary due to the more extreme class imbalances present in the data, such as those in which only 3 instances of one of the two homograph pronunciations are available.
-
     Three additional train splits used in dissertation experimentation exist: `train_euro`, `train_swbd`, and `train_swbd_hand`, each of which add data to the same 2719 WHD train samples in the train split. 
-
     **`train_euro` data**
     The train_euro split augments the WHD with 718 samples from the French English Europarl corpus for a total of 3437 train samples. The Europarl samples are labeled using the Alignment-to-Pronunciation (AP) label imputation technique developed in the dissertation, which depends on the presence of disjoint sets of interlingual text word forms that align to homograph pronunciations.
-
     **`train_swbd` data**
     The train_swbd split augments the WHD with 147 samples from the Switchboard corpus for a total of 2866 train samples. The SWBD samples are labeled using label imputation from transcribed audio, developed in the dissertation as the first recorded attempt of its kind.
-
     **`train_swbd_hand` data**
     The train_swbd_hand split augments the WHD with 322 samples from the Switchboard corpus for a total of 3041 train samples. The SWBD samples are labeled by hand during the process of label imputation from transcribed audio. The data from the imputation process contains fewer samples due to overlap in imputed labels between homograph pronunciations. For example, the imputed pronunciations for _excuse_, as in "an excuse to do", which should all be mappable to /ək'skju:s/, also contain pronunciations that map to this homograph's alternate pronunciation, /ək'skju:z/.
+    
+**`EUROPARL_Data`**
+`Europarl_Imputed_All`
+There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation are: 
+homograph    wordid               counts
+abuse        abuse_nou               332
+             abuse_vrb                22
+abuses       abuses_nou              169
+             abuses_vrb                2
+advocate     advocate_vrb            143
+             advocate_nou             13
+affect       affect                  472
+aged         aged                     81
+             aged_adj                  3
+aggregate    aggregate_adj-nou         5
+             aggregate_vrb             1
+alternate    alternate_vrb             5
+             alternate_adj-nou         1
+analyses     analyses_nou            241
+             analyses_vrb              2
+approximate  approximate_vrb          12
+             approximate_adj-nou       8
+associate    associate_vrb            32
+             associate_adj-nou         8
+bass         bass_corp                 1
+celtic       celtic                    3
+close        close_adj-nou           620
+             close_vrb               432
+combine      combine_vrb             160
+compound     compound_nou              8
+             compound_vrb              1
+compress     compress                  1
+confines     confines_vrb             13
+             confines_nou             12
+conflict     conflict_nou           1587
+             conflict_vrb             38
+conjugate    conjugate_vrb             1
+construct    construct_vrb            71
+             construct_nou            16
+content      content_nou            1309
+             content_adj-nou-vrb       1
+contest      contest_vrb              27
+             contest_nou               9
+converse     converse_vrb              4
+convert      convert_vrb              39
+convict      convict_vrb               4
+correlate    correlate_nou-vrb         4
+defect       defect_nou               19
+degenerate   degenerate_vrb           27
+             degenerate_adj-nou        1
+delegate     delegate_vrb             23
+             delegate_nou             20
+deliberate   deliberate_adj           37
+             deliberate_vrb            1
+diagnoses    diagnoses_nou             6
+invite       invite_vrb              244
+isolate      isolate                  42
+lead         lead_nou-vrb           1044
+             lead_nou                 58
+learned      learned_vrb             139
+live         live_vrb               1053
+             live_adj                 11
+lives        lives_nou               943
+             lives_vrb                55
+minute       minute                  380
+misuse       misuse_nou               17
+             misuse_vrb                9
+mobile       mobile                  186
+overthrow    overthrow_nou            11
+             overthrow_vrb             9
+perfect      perfect_adj             177
+             perfect_vrb               4
+perfume      perfume_nou               1
+pervert      pervert_vrb               4
+polish       polish_geo              452
+             polish                    1
+postulate    postulate_vrb             3
+             postulate_nou             2
+present      present_adj-nou        3493
+             present_vrb             995
+produce      produce_vrb             586
+             produce_nou             121
+progress     progress_nou           4657
+protest      protest_vrb             202
+             protest_nou             136
+reading      reading_en             1972
+rebel        rebel_nou                40
+record       record_nou              112
+             record_vrb               13
+recount      recount_vrb               5
+refund       refund_nou               16
+             refund_vrb                2
+refuse       refuse_vrb              355
+reject       reject_vrb             1026
+resume       resume_vrb              139
+sake         sake                    225
+separate     separate_adj            234
+             separate_vrb              3
+sow          sow                       8
+subordinate  subordinate_adj-nou      22
+supplement   supplement_vrb          123
+             supplement_nou           26
+suspect      suspect_vrb             107
+             suspect_adj-nou          17
+syndicate    syndicate_nou             2
+tear         tear_vrb                  7
+transplant   transform                14
+             transplant_nou            1
+transport    transport_nou          4358
+             transport_vrb             3
+upset        upset_vrb                21
+             upset_nou                 3
+uses         uses_vrb                114
+             uses_nou                 37
+wind         wind_nou                 72
+             wind_vrb                 15
+winds        winds_nou                29
+             winds_vrb                 6
+wound        wound_nou-vrb            18
+             wound_vrb                 1
 
 3. _Is everything included or does the data rely on external resources?_
 
