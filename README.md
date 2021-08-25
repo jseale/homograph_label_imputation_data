@@ -469,7 +469,7 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
 
     I. Invariant homographs 
     
-    Seventeen of the 34 homographs have only one pronunciation in the data set. These invariant homographs are removed so as not to bolster model scores, as the models would correctly pick the only class available. They are as follows:
+    Seventeen of the original WHD homographs have only one pronunciation. These invariant homographs are removed so as not to bolster model scores, as the models would correctly pick the only class available. They are as follows:
 
     1.  addict
     2.  compact
@@ -490,7 +490,7 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
     17.  subject
 
     II. Prohibitively low resource homographs
-    Data for a further seventeen homographs is then removed as these homographs include at least one pronunciation class with fewer than three instances. These homographs are as follows:
+    Data for a further seventeen homographs is removed as these homographs include at least one pronunciation class with fewer than three instances. These homographs are as follows:
 
     1.  abstract
     2.  appropriate
@@ -547,7 +547,7 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
     33. wind
     34. winds
 
-    Each of these 34 homographs has 2 pronunciations which makes for a total of 68 pronunciation classes represented across 3,407 samples split into 80% train, 10% dev, 10% test. See the Dataset composition section above for more.
+    Each of these selected 34 homographs has 2 pronunciations which makes for a total of 68 pronunciation classes represented across 3,407 samples split into 80% train, 10% dev, 10% test. See the Dataset composition section above for more.
     
 **Imputed data**
 The following two sections provide an account of the development of the two different label imputation processes used on each data type. It should be noted that this was exploratory work, done in part to determine how many homographs and pronunciation classes were available in the data sets. Far more data was obtained than was used in experimentation.
