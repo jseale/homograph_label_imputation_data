@@ -545,7 +545,7 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
     33. wind
     34. winds
 
-    Each of these selected 34 homographs has 2 pronunciations which makes for a total of 68 pronunciation classes represented across 3,407 samples split into 80% train, 10% dev, 10% test. See the Dataset composition section above for more.
+Each of these selected 34 homographs has 2 pronunciations which makes for a total of 68 pronunciation classes represented across 3,407 samples split into 80% train, 10% dev, 10% test. See the Dataset composition section above for more.
     
 **Imputed data**
 The following two sections provide an account of the development of the two different label imputation processes used on each data type. It should be noted that this was exploratory work, done in part to determine how many homographs and pronunciation classes were available in the data sets. Far more data was obtained than was used in experimentation.
