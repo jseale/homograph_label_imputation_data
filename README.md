@@ -54,8 +54,145 @@ The train_swbd split augments the WHD with 147 samples from the Switchboard corp
 The train_swbd_hand split augments the WHD with 322 samples from the Switchboard corpus for a total of 3041 train samples. The SWBD samples are labeled by hand during the process of label imputation from transcribed audio. The data from the imputation process contains fewer samples due to overlap in imputed labels between homograph pronunciations. For example, the imputed pronunciations for _excuse_, as in "an excuse to do", which should all be mappable to /ək'skju:s/, also contain pronunciations that map to this homograph's alternate pronunciation, /ək'skju:z/.
     
 **`EUROPARL_Data`**
+`Europarl_Hand_All` There are 2,023 hand-labeled instances over 130 pronunications for 78 homographs in this data. The counts per pronunciation/WHD `wordid` are:
 
-`Europarl_Imputed_All` There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation/WHD wordid are:
+| homograph   | wordid                |   count |
+|:------------|:----------------------|:-------:|
+| abuse       | abuse_nou             |      23 |
+| abuse       | abuse_vrb             |       2 |
+| abuses      | abuses_nou            |      34 |
+| abuses      | abuses_vrb            |       1 |
+| advocate    | advocate_nou          |       7 |
+| advocate    | advocate_vrb          |      21 |
+| affect      | affect                |      35 |
+| aged        | aged                  |      15 |
+| aged        | aged_adj              |       3 |
+| aggregate   | aggregate_adj-nou     |      22 |
+| aggregate   | aggregate_vrb         |       1 |
+| alternate   | alternate_adj-nou     |       7 |
+| alternate   | alternate_vrb         |      16 |
+| analyses    | analyses_nou          |      32 |
+| analyses    | analyses_vrb          |       4 |
+| approximate | approximate_adj-nou   |      13 |
+| approximate | approximate_vrb       |      18 |
+| associate   | associate_adj-nou     |       9 |
+| associate   | associate_vrb         |      25 |
+| bass        | bass_corp             |       7 |
+| buffet      | buffet_vrb            |      17 |
+| celtic      | celtic                |      29 |
+| celtic      | celtic_adj-nou-sports |       2 |
+| close       | close_adj-nou         |      20 |
+| close       | close_vrb             |      11 |
+| combine     | combine_vrb           |      30 |
+| compound    | compound_nou          |      21 |
+| compound    | compound_vrb          |       3 |
+| compress    | compress              |       4 |
+| confines    | confines_nou          |      12 |
+| confines    | confines_vrb          |      15 |
+| conflict    | conflict_nou          |      36 |
+| conflict    | conflict_vrb          |       1 |
+| conjugate   | conjugate_vrb         |       2 |
+| conscript   | conscript_nou         |       2 |
+| conscript   | conscript_vrb         |       1 |
+| construct   | construct_nou         |       5 |
+| construct   | construct_vrb         |      28 |
+| content     | content_adj-nou-vrb   |       1 |
+| content     | content_nou           |      35 |
+| contest     | contest_nou           |      12 |
+| contest     | contest_vrb           |      19 |
+| converse    | converse_adj-nou      |       5 |
+| converse    | converse_vrb          |       4 |
+| convert     | convert_vrb           |      36 |
+| convict     | convict_nou           |       2 |
+| convict     | convict_vrb           |      21 |
+| correlate   | correlate_nou-vrb     |      16 |
+| defect      | defect_nou            |      24 |
+| degenerate  | degenerate_adj-nou    |       2 |
+| degenerate  | degenerate_vrb        |      28 |
+| delegate    | delegate_nou          |      11 |
+| delegate    | delegate_vrb          |      20 |
+| deliberate  | deliberate_adj        |      22 |
+| deliberate  | deliberate_vrb        |       3 |
+| diagnoses   | diagnoses_nou         |      24 |
+| diagnoses   | diagnoses_vrb         |       1 |
+| invite      | invite_vrb            |      18 |
+| isolate     | isolate               |      36 |
+| lead        | lead_nou              |       1 |
+| lead        | lead_nou-vrb          |      47 |
+| learned     | learned_vrb           |      28 |
+| live        | live_adj              |       1 |
+| live        | live_vrb              |      18 |
+| live        | lives_vrb             |       1 |
+| lives       | lives_nou             |      30 |
+| lives       | lives_vrb             |       3 |
+| minute      | minute                |      32 |
+| misuse      | misuse_nou            |      10 |
+| misuse      | misuse_vrb            |       4 |
+| mobile      | mobile                |      28 |
+| ornament    | ornament_nou          |       1 |
+| overthrow   | overthrow_nou         |       8 |
+| overthrow   | overthrow_vrb         |      21 |
+| perfect     | perfect_adj           |      35 |
+| perfect     | perfect_vrb           |       2 |
+| perfume     | perfume_nou           |      11 |
+| pervert     | pervert_vrb           |       8 |
+| polish      | polish                |       1 |
+| polish      | polish_geo            |       6 |
+| postulate   | postulate_nou         |       2 |
+| postulate   | postulate_vrb         |       6 |
+| present     | present_adj-nou       |      42 |
+| present     | present_vrb           |      15 |
+| produce     | produce_nou           |       3 |
+| produce     | produce_vrb           |      30 |
+| progress    | progress_nou          |      44 |
+| progress    | progress_vrb          |       2 |
+| protest     | protest_nou           |      17 |
+| protest     | protest_vrb           |      18 |
+| reading     | reading_en            |      37 |
+| rebel       | rebel_nou             |      32 |
+| rebel       | rebel_vrb             |       2 |
+| record      | record_nou            |      11 |
+| record      | record_vrb            |       2 |
+| recount     | recount_nou           |       8 |
+| recount     | recount_vrb           |      12 |
+| refund      | refund_nou            |      14 |
+| refund      | refund_vrb            |       2 |
+| refuse      | refuse_vrb            |      36 |
+| reject      | reject_vrb            |      46 |
+| resume      | resume_vrb            |      29 |
+| retard      | retard_vrb            |       6 |
+| sake        | sake                  |      19 |
+| separate    | separate_adj          |      28 |
+| separate    | separate_vrb          |       3 |
+| sow         | sow                   |      27 |
+| subordinate | subordinate_adj-nou   |      18 |
+| subordinate | subordinate_vrb       |       5 |
+| supplement  | subordinate_adj-nou   |       2 |
+| supplement  | supplement_nou        |       7 |
+| supplement  | supplement_vrb        |      26 |
+| suspect     | suspect_adj-nou       |       8 |
+| suspect     | suspect_vrb           |      27 |
+| syndicate   | syndicate_nou         |       8 |
+| tear        | tear_nou              |       1 |
+| tear        | tear_vrb              |      21 |
+| transform   | transform             |      27 |
+| transplant  | transform             |       1 |
+| transplant  | transplant_nou        |      22 |
+| transplant  | transplant_vrb        |       3 |
+| transport   | transport_nou         |      48 |
+| transport   | transport_vrb         |       2 |
+| upset       | upset_nou             |       6 |
+| upset       | upset_vrb             |      22 |
+| uses        | uses_nou              |       8 |
+| uses        | uses_vrb              |      26 |
+| wind        | wind_nou              |      10 |
+| wind        | wind_vrb              |      11 |
+| winds       | winds_nou             |      26 |
+| winds       | winds_vrb             |       4 |
+| wound       | wound_nou-vrb         |      18 |
+| wound       | wound_vrb             |       3 |
+
+`Europarl_Imputed_All` There are 30,233 semi-automatedly labeled instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation/WHD `wordid` are:
 
 | homograph   | wordid              |   count |
 |:------------|:--------------------|:-------:|
@@ -174,10 +311,145 @@ The train_swbd_hand split augments the WHD with 322 samples from the Switchboard
 | winds       | winds_vrb           |       6 |
 | wound       | wound_nou-vrb       |      18 |
 | wound       | wound_vrb           |       1 |
-             
+
+**`SWBD_Data`**
+`SWBD_Hand_All` There are 2,891 hand-labeled instances over 127 pronunciations for 95 homographs in this data. The counts per pronunciation/WHD `wordid` are:
+
+| homograph   | wordid            |   count |
+|:------------|:------------------|:-------:|
+| abuse       | abuse_nou         |       8 |
+| abuse       | abuse_vrb         |       5 |
+| advocate    | advocate          |       2 |
+| advocate    | advocate_nou      |       4 |
+| affect      | affect            |       6 |
+| affiliate   | affiliate_nou     |       1 |
+| aged        | aged              |       3 |
+| alternate   | alternate_adj-nou |       5 |
+| appropriate | appropriate_adj   |      11 |
+| associate   | associate_adj-nou |       1 |
+| associate   | associate_vrb     |       1 |
+| attribute   | attribute_vrb     |       1 |
+| axes        | ax                |       1 |
+| bass        | bass_corp         |       9 |
+| blessed     | blessed_vrb       |       2 |
+| bow         | bow_nou-knot      |       2 |
+| bow         | bow_nou-ship      |       2 |
+| close       | close_adj-nou     |     100 |
+| close       | close_vrb         |       7 |
+| combine     | combine_vrb       |       4 |
+| compact     | compact_adj-nou   |       4 |
+| compress    | compress          |       1 |
+| conflict    | conflict_nou      |       8 |
+| construct   | construct_vrb     |       1 |
+| content     | content_nou       |       7 |
+| contest     | contest_nou       |       3 |
+| contract    | contract_nou      |       9 |
+| contrast    | contrast_nou      |       1 |
+| contrast    | contrast_vrb      |       1 |
+| convert     | convert_vrb       |      10 |
+| convict     | convict_vrb       |      10 |
+| decrease    | decrease_nou      |       1 |
+| decrease    | decrease_vrb      |       4 |
+| defect      | defect_vrb        |       1 |
+| delegate    | delegate_vrb      |       1 |
+| deliberate  | deliberate_adj    |       5 |
+| desert      | desert_nou        |       9 |
+| deviate     | deviate_vrb       |       1 |
+| discount    | discount_nou      |       4 |
+| document    | document_vrb      |       2 |
+| dove        | dove_vrb          |       1 |
+| duplicate   | duplicate_adj-nou |       1 |
+| elaborate   | elaborate_adj     |       5 |
+| estimate    | estimate_nou      |       1 |
+| excuse      | excuse_nou        |      15 |
+| excuse      | excuse_vrb        |      19 |
+| expose      | expose_vrb        |       1 |
+| frequent    | frequent_adj      |       4 |
+| graduate    | graduate_adj-nou  |      21 |
+| graduate    | graduate_vrb      |      13 |
+| house       | house_nou         |     381 |
+| impact      | impact_nou        |      18 |
+| incline     | incline_nou       |       1 |
+| increase    | increase_nou      |       4 |
+| increase    | increase_vrb      |       7 |
+| initiate    | initiate_vrb      |       2 |
+| instrument  | instrument_nou    |       5 |
+| interchange | interchange_vrb   |       1 |
+| intimate    | intimate_adj      |       1 |
+| invalid     | invalid_adj       |       1 |
+| invite      | invite_nou        |       1 |
+| invite      | invite_vrb        |       3 |
+| isolate     | isolate           |       3 |
+| jesus       | jesus             |       1 |
+| job         | job               |     295 |
+| lead        | lead_nou          |       1 |
+| lead        | lead_nou-vrb      |       9 |
+| learned     | learned_vrb       |      42 |
+| live        | live_adj          |       8 |
+| live        | live_vrb          |     337 |
+| lives       | lives_nou         |      34 |
+| lives       | lives_vrb         |      51 |
+| minute      | minute            |      46 |
+| misuse      | misuse_vrb        |       1 |
+| mobile      | mobile            |       5 |
+| mobile      | mobile_nou-art    |       1 |
+| moderate    | moderate_adj-nou  |       1 |
+| mouth       | mouth_nou         |      10 |
+| object      | object_nou        |       3 |
+| object      | object_vrb        |       3 |
+| perfect     | perfect_adj       |      20 |
+| permit      | permit_nou        |       3 |
+| permit      | permit_vrb        |       3 |
+| present     | present_adj-nou   |      19 |
+| present     | present_vrb       |       4 |
+| produce     | produce_nou       |       1 |
+| produce     | produce_vrb       |       7 |
+| progress    | progress_nou      |       6 |
+| progress    | progress_vrb      |       1 |
+| project     | project_nou       |      33 |
+| protest     | protest_nou       |       1 |
+| protest     | protest_vrb       |       2 |
+| read        | read_past         |     134 |
+| read        | read_present      |     229 |
+| reading     | reading_en        |     101 |
+| rebel       | rebel_nou         |       1 |
+| rebel       | rebel_vrb         |       2 |
+| record      | record_nou        |      29 |
+| record      | record_vrb        |       4 |
+| refund      | refund_nou        |       2 |
+| refund      | refund_vrb        |       1 |
+| refuse      | refuse_nou        |       2 |
+| refuse      | refuse_vrb        |       5 |
+| reject      | reject_vrb        |       2 |
+| resume      | resume_nou        |       4 |
+| row         | row_1             |      21 |
+| sake        | sake              |       4 |
+| separate    | separate_adj      |      16 |
+| separate    | separate_vrb      |      15 |
+| sow         | sow               |       1 |
+| subject     | subject_adj-nou   |      77 |
+| subject     | subject_vrb       |       2 |
+| supplement  | supplement_vrb    |       3 |
+| suspect     | suspect_vrb       |      19 |
+| tear        | tear_vrb          |       4 |
+| transplant  | transplant_nou    |       1 |
+| transplant  | transplant_vrb    |       2 |
+| transport   | transport_nou     |       1 |
+| upset       | upset_vrb         |      32 |
+| use         | use_nou           |      28 |
+| use         | use_vrb           |     358 |
+| uses        | uses_nou          |       1 |
+| uses        | uses_vrb          |      13 |
+| wind        | wind_nou          |      24 |
+| wind        | wind_vrb          |      21 |
+| winds       | winds_vrb         |       4 |
+| wound       | wound_vrb         |      13 |
+            
+For an account of all automatedly labeled SWBD instances, see appendix G of the [dissertation](). 
+
 3. _Is everything included or does the data rely on external resources?_
 
-    The _wordids_ used in this data are adopted from Gorman et al. (2018) and can be connected with an IPA representation of the pronunciation using the wordids.tsv located in the WikipediaHomographData repo, [here](https://github.com/google/WikipediaHomographData/blob/master/data/wordids.tsv).
+    The `wordid` labels used in this data are adopted from Gorman et al. (2018) and can be connected with an IPA representation of the pronunciation using the wordids.tsv located in the WikipediaHomographData repo, [here](https://github.com/google/WikipediaHomographData/blob/master/data/wordids.tsv).
 
 4. _Are there recommended data splits or evaluation measures?_
 
