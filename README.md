@@ -57,122 +57,239 @@ The train_swbd_hand split augments the WHD with 322 samples from the Switchboard
 
 `Europarl_Imputed_All` There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation are:
 
-**homograph&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wordid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counts**\
-abuse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abuse_nou&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;332\
-             abuse_vrb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22\
-abuses       abuses_nou              169\
-             abuses_vrb                2\
-advocate     advocate_vrb            143\
-             advocate_nou             13\
-affect       affect                  472\
-aged         aged                     81\
-             aged_adj                  3\
-aggregate    aggregate_adj-nou         5\
-             aggregate_vrb             1\
-alternate    alternate_vrb             5\
-             alternate_adj-nou         1\
-analyses     analyses_nou            241\
-             analyses_vrb              2\
-approximate  approximate_vrb          12\
-             approximate_adj-nou       8\
-associate    associate_vrb            32\
-             associate_adj-nou         8\
-bass         bass_corp                 1\
-celtic       celtic                    3\
-close        close_adj-nou           620\
-             close_vrb               432\
-combine      combine_vrb             160\
-compound     compound_nou              8\
-             compound_vrb              1\
-compress     compress                  1\
-confines     confines_vrb             13\
-             confines_nou             12\
-conflict     conflict_nou           1587\
-             conflict_vrb             38\
-conjugate    conjugate_vrb             1\
-construct    construct_vrb            71\
-             construct_nou            16\
-content      content_nou            1309\
-             content_adj-nou-vrb       1\
-contest      contest_vrb              27\
-             contest_nou               9\
-converse     converse_vrb              4\
-convert      convert_vrb              39\
-convict      convict_vrb               4\
-correlate    correlate_nou-vrb         4\
-defect       defect_nou               19\
-degenerate   degenerate_vrb           27\
-             degenerate_adj-nou        1\
-delegate     delegate_vrb             23\
-             delegate_nou             20\
-deliberate   deliberate_adj           37\
-             deliberate_vrb            1\
-diagnoses    diagnoses_nou             6\
-invite       invite_vrb              244\
-isolate      isolate                  42\
-lead         lead_nou-vrb           1044\
-             lead_nou                 58\
-learned      learned_vrb             139\
-live         live_vrb               1053\
-             live_adj                 11\
-lives        lives_nou               943\
-             lives_vrb                55\
-minute       minute                  380\
-misuse       misuse_nou               17\
-             misuse_vrb                9\
-mobile       mobile                  186\
-overthrow    overthrow_nou            11\
-             overthrow_vrb             9\
-perfect      perfect_adj             177\
-             perfect_vrb               4\
-perfume      perfume_nou               1\
-pervert      pervert_vrb               4\
-polish       polish_geo              452\
-             polish                    1\
-postulate    postulate_vrb             3\
-             postulate_nou             2\
-present      present_adj-nou        3493\
-             present_vrb             995\
-produce      produce_vrb             586\
-             produce_nou             121\
-progress     progress_nou           4657\
-protest      protest_vrb             202\
-             protest_nou             136\
-reading      reading_en             1972\
-rebel        rebel_nou                40\
-record       record_nou              112\
-             record_vrb               13\
-recount      recount_vrb               5\
-refund       refund_nou               16\
-             refund_vrb                2\
-refuse       refuse_vrb              355\
-reject       reject_vrb             1026\
-resume       resume_vrb              139\
-sake         sake                    225\
-separate     separate_adj            234\
-             separate_vrb              3\
-sow          sow                       8\
-subordinate  subordinate_adj-nou      22\
-supplement   supplement_vrb          123\
-             supplement_nou           26\
-suspect      suspect_vrb             107\
-             suspect_adj-nou          17\
-syndicate    syndicate_nou             2\
-tear         tear_vrb                  7\
-transplant   transform                14\
-             transplant_nou            1\
-transport    transport_nou          4358\
-             transport_vrb             3\
-upset        upset_vrb                21\
-             upset_nou                 3\
-uses         uses_vrb                114\
-             uses_nou                 37\
-wind         wind_nou                 72\
-             wind_vrb                 15\
-winds        winds_nou                29\
-             winds_vrb                 6\
-wound        wound_nou-vrb            18\
-             wound_vrb                 1\
++-----+-------------+---------------------+---------+
+|     | homograph   | wordid              |   count |
++=====+=============+=====================+=========+
+|   0 | abuse       | abuse_nou           |     332 |
++-----+-------------+---------------------+---------+
+|   1 | abuse       | abuse_vrb           |      22 |
++-----+-------------+---------------------+---------+
+|   2 | abuses      | abuses_nou          |     169 |
++-----+-------------+---------------------+---------+
+|   3 | abuses      | abuses_vrb          |       2 |
++-----+-------------+---------------------+---------+
+|   4 | advocate    | advocate_nou        |      13 |
++-----+-------------+---------------------+---------+
+|   5 | advocate    | advocate_vrb        |     143 |
++-----+-------------+---------------------+---------+
+|   6 | affect      | affect              |     472 |
++-----+-------------+---------------------+---------+
+|   7 | aged        | aged                |      81 |
++-----+-------------+---------------------+---------+
+|   8 | aged        | aged_adj            |       3 |
++-----+-------------+---------------------+---------+
+|   9 | aggregate   | aggregate_adj-nou   |       5 |
++-----+-------------+---------------------+---------+
+|  10 | aggregate   | aggregate_vrb       |       1 |
++-----+-------------+---------------------+---------+
+|  11 | alternate   | alternate_adj-nou   |       1 |
++-----+-------------+---------------------+---------+
+|  12 | alternate   | alternate_vrb       |       5 |
++-----+-------------+---------------------+---------+
+|  13 | analyses    | analyses_nou        |     241 |
++-----+-------------+---------------------+---------+
+|  14 | analyses    | analyses_vrb        |       2 |
++-----+-------------+---------------------+---------+
+|  15 | approximate | approximate_adj-nou |       8 |
++-----+-------------+---------------------+---------+
+|  16 | approximate | approximate_vrb     |      12 |
++-----+-------------+---------------------+---------+
+|  17 | associate   | associate_adj-nou   |       8 |
++-----+-------------+---------------------+---------+
+|  18 | associate   | associate_vrb       |      32 |
++-----+-------------+---------------------+---------+
+|  19 | bass        | bass_corp           |       1 |
++-----+-------------+---------------------+---------+
+|  20 | celtic      | celtic              |       3 |
++-----+-------------+---------------------+---------+
+|  21 | close       | close_adj-nou       |     620 |
++-----+-------------+---------------------+---------+
+|  22 | close       | close_vrb           |     432 |
++-----+-------------+---------------------+---------+
+|  23 | combine     | combine_vrb         |     160 |
++-----+-------------+---------------------+---------+
+|  24 | compound    | compound_nou        |       8 |
++-----+-------------+---------------------+---------+
+|  25 | compound    | compound_vrb        |       1 |
++-----+-------------+---------------------+---------+
+|  26 | compress    | compress            |       1 |
++-----+-------------+---------------------+---------+
+|  27 | confines    | confines_nou        |      12 |
++-----+-------------+---------------------+---------+
+|  28 | confines    | confines_vrb        |      13 |
++-----+-------------+---------------------+---------+
+|  29 | conflict    | conflict_nou        |    1587 |
++-----+-------------+---------------------+---------+
+|  30 | conflict    | conflict_vrb        |      38 |
++-----+-------------+---------------------+---------+
+|  31 | conjugate   | conjugate_vrb       |       1 |
++-----+-------------+---------------------+---------+
+|  32 | construct   | construct_nou       |      16 |
++-----+-------------+---------------------+---------+
+|  33 | construct   | construct_vrb       |      71 |
++-----+-------------+---------------------+---------+
+|  34 | content     | content_adj-nou-vrb |       1 |
++-----+-------------+---------------------+---------+
+|  35 | content     | content_nou         |    1309 |
++-----+-------------+---------------------+---------+
+|  36 | contest     | contest_nou         |       9 |
++-----+-------------+---------------------+---------+
+|  37 | contest     | contest_vrb         |      27 |
++-----+-------------+---------------------+---------+
+|  38 | converse    | converse_vrb        |       4 |
++-----+-------------+---------------------+---------+
+|  39 | convert     | convert_vrb         |      39 |
++-----+-------------+---------------------+---------+
+|  40 | convict     | convict_vrb         |       4 |
++-----+-------------+---------------------+---------+
+|  41 | correlate   | correlate_nou-vrb   |       4 |
++-----+-------------+---------------------+---------+
+|  42 | defect      | defect_nou          |      19 |
++-----+-------------+---------------------+---------+
+|  43 | degenerate  | degenerate_adj-nou  |       1 |
++-----+-------------+---------------------+---------+
+|  44 | degenerate  | degenerate_vrb      |      27 |
++-----+-------------+---------------------+---------+
+|  45 | delegate    | delegate_nou        |      20 |
++-----+-------------+---------------------+---------+
+|  46 | delegate    | delegate_vrb        |      23 |
++-----+-------------+---------------------+---------+
+|  47 | deliberate  | deliberate_adj      |      37 |
++-----+-------------+---------------------+---------+
+|  48 | deliberate  | deliberate_vrb      |       1 |
++-----+-------------+---------------------+---------+
+|  49 | diagnoses   | diagnoses_nou       |       6 |
++-----+-------------+---------------------+---------+
+|  50 | invite      | invite_vrb          |     244 |
++-----+-------------+---------------------+---------+
+|  51 | isolate     | isolate             |      42 |
++-----+-------------+---------------------+---------+
+|  52 | lead        | lead_nou            |      58 |
++-----+-------------+---------------------+---------+
+|  53 | lead        | lead_nou-vrb        |    1044 |
++-----+-------------+---------------------+---------+
+|  54 | learned     | learned_vrb         |     139 |
++-----+-------------+---------------------+---------+
+|  55 | live        | live_adj            |      11 |
++-----+-------------+---------------------+---------+
+|  56 | live        | live_vrb            |    1053 |
++-----+-------------+---------------------+---------+
+|  57 | lives       | lives_nou           |     943 |
++-----+-------------+---------------------+---------+
+|  58 | lives       | lives_vrb           |      55 |
++-----+-------------+---------------------+---------+
+|  59 | minute      | minute              |     380 |
++-----+-------------+---------------------+---------+
+|  60 | misuse      | misuse_nou          |      17 |
++-----+-------------+---------------------+---------+
+|  61 | misuse      | misuse_vrb          |       9 |
++-----+-------------+---------------------+---------+
+|  62 | mobile      | mobile              |     186 |
++-----+-------------+---------------------+---------+
+|  63 | overthrow   | overthrow_nou       |      11 |
++-----+-------------+---------------------+---------+
+|  64 | overthrow   | overthrow_vrb       |       9 |
++-----+-------------+---------------------+---------+
+|  65 | perfect     | perfect_adj         |     177 |
++-----+-------------+---------------------+---------+
+|  66 | perfect     | perfect_vrb         |       4 |
++-----+-------------+---------------------+---------+
+|  67 | perfume     | perfume_nou         |       1 |
++-----+-------------+---------------------+---------+
+|  68 | pervert     | pervert_vrb         |       4 |
++-----+-------------+---------------------+---------+
+|  69 | polish      | polish              |       1 |
++-----+-------------+---------------------+---------+
+|  70 | polish      | polish_geo          |     452 |
++-----+-------------+---------------------+---------+
+|  71 | postulate   | postulate_nou       |       2 |
++-----+-------------+---------------------+---------+
+|  72 | postulate   | postulate_vrb       |       3 |
++-----+-------------+---------------------+---------+
+|  73 | present     | present_adj-nou     |    3493 |
++-----+-------------+---------------------+---------+
+|  74 | present     | present_vrb         |     995 |
++-----+-------------+---------------------+---------+
+|  75 | produce     | produce_nou         |     121 |
++-----+-------------+---------------------+---------+
+|  76 | produce     | produce_vrb         |     586 |
++-----+-------------+---------------------+---------+
+|  77 | progress    | progress_nou        |    4657 |
++-----+-------------+---------------------+---------+
+|  78 | protest     | protest_nou         |     136 |
++-----+-------------+---------------------+---------+
+|  79 | protest     | protest_vrb         |     202 |
++-----+-------------+---------------------+---------+
+|  80 | reading     | reading_en          |    1972 |
++-----+-------------+---------------------+---------+
+|  81 | rebel       | rebel_nou           |      40 |
++-----+-------------+---------------------+---------+
+|  82 | record      | record_nou          |     112 |
++-----+-------------+---------------------+---------+
+|  83 | record      | record_vrb          |      13 |
++-----+-------------+---------------------+---------+
+|  84 | recount     | recount_vrb         |       5 |
++-----+-------------+---------------------+---------+
+|  85 | refund      | refund_nou          |      16 |
++-----+-------------+---------------------+---------+
+|  86 | refund      | refund_vrb          |       2 |
++-----+-------------+---------------------+---------+
+|  87 | refuse      | refuse_vrb          |     355 |
++-----+-------------+---------------------+---------+
+|  88 | reject      | reject_vrb          |    1026 |
++-----+-------------+---------------------+---------+
+|  89 | resume      | resume_vrb          |     139 |
++-----+-------------+---------------------+---------+
+|  90 | sake        | sake                |     225 |
++-----+-------------+---------------------+---------+
+|  91 | separate    | separate_adj        |     234 |
++-----+-------------+---------------------+---------+
+|  92 | separate    | separate_vrb        |       3 |
++-----+-------------+---------------------+---------+
+|  93 | sow         | sow                 |       8 |
++-----+-------------+---------------------+---------+
+|  94 | subordinate | subordinate_adj-nou |      22 |
++-----+-------------+---------------------+---------+
+|  95 | supplement  | supplement_nou      |      26 |
++-----+-------------+---------------------+---------+
+|  96 | supplement  | supplement_vrb      |     123 |
++-----+-------------+---------------------+---------+
+|  97 | suspect     | suspect_adj-nou     |      17 |
++-----+-------------+---------------------+---------+
+|  98 | suspect     | suspect_vrb         |     107 |
++-----+-------------+---------------------+---------+
+|  99 | syndicate   | syndicate_nou       |       2 |
++-----+-------------+---------------------+---------+
+| 100 | tear        | tear_vrb            |       7 |
++-----+-------------+---------------------+---------+
+| 101 | transplant  | transform           |      14 |
++-----+-------------+---------------------+---------+
+| 102 | transplant  | transplant_nou      |       1 |
++-----+-------------+---------------------+---------+
+| 103 | transport   | transport_nou       |    4358 |
++-----+-------------+---------------------+---------+
+| 104 | transport   | transport_vrb       |       3 |
++-----+-------------+---------------------+---------+
+| 105 | upset       | upset_nou           |       3 |
++-----+-------------+---------------------+---------+
+| 106 | upset       | upset_vrb           |      21 |
++-----+-------------+---------------------+---------+
+| 107 | uses        | uses_nou            |      37 |
++-----+-------------+---------------------+---------+
+| 108 | uses        | uses_vrb            |     114 |
++-----+-------------+---------------------+---------+
+| 109 | wind        | wind_nou            |      72 |
++-----+-------------+---------------------+---------+
+| 110 | wind        | wind_vrb            |      15 |
++-----+-------------+---------------------+---------+
+| 111 | winds       | winds_nou           |      29 |
++-----+-------------+---------------------+---------+
+| 112 | winds       | winds_vrb           |       6 |
++-----+-------------+---------------------+---------+
+| 113 | wound       | wound_nou-vrb       |      18 |
++-----+-------------+---------------------+---------+
+| 114 | wound       | wound_vrb           |       1 |
++-----+-------------+---------------------+---------+
              
 3. _Is everything included or does the data rely on external resources?_
 
