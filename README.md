@@ -55,8 +55,8 @@ The train_swbd_hand split augments the WHD with 322 samples from the Switchboard
     
 **`EUROPARL_Data`**
 `Europarl_Imputed_All`
-There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation are: 
-homograph    wordid               counts\
+There are 30233 instances over 115 pronunciations for 73 homographs in this data. The counts per pronunciation are:\ 
+**homograph\t    wordid\t               counts**\
 abuse        abuse_nou               332\
              abuse_vrb                22\
 abuses       abuses_nou              169\
