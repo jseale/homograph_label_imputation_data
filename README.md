@@ -462,7 +462,7 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
 
      This question is answered in three subsections---the first covers the Wikipedia Homograph Data, the second explains the label imputation process by which the labeled data from the Switchboard (SWBD) corpus was generated, and the third explains the label imputation process which was used to generate labeled data from the French English Europarl data.
 
-    **WHD**
+    **Wikipedia Homorgaph Data (WHD)**
     The WHD was obtained by a team at Google from Wikipedia text using a random sampling procedure to obtain sentences homographs that were subsequently labeled for pronunciation by 4 annotators. This data was made publically available through Github and subsequently used in dissertation experimentation. The original WHD contains two splits, train and eval, with 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples. For this version of the WHD, the two splits are combined. Data associated with 34 of those homographs is then removed due to either invariance in pronunciation or prohibitively low sample size. The remaining data is split into three splits in order to develop models using a train and dev set, and provide performance metrics on a test set.
 
     I. Invariant homographs 
