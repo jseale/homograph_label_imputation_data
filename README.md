@@ -465,85 +465,85 @@ For an account of all automatedly labeled SWBD instances, see appendix G of the 
     **Wikipedia Homorgaph Data (WHD)**
     The WHD was obtained by a team at Google from Wikipedia text using a random sampling procedure to obtain sentences homographs that were subsequently labeled for pronunciation by 4 annotators. This data was made publically available through Github and subsequently used in dissertation experimentation. The original WHD contains two splits, train and eval, with 162 unique homographs, 308 distinct pronunciations, and around 16,000 samples. For this version of the WHD, the two splits are combined. Data associated with 34 of those homographs is then removed due to either invariance in pronunciation or prohibitively low sample size. The remaining data is split into three splits in order to develop models using a train and dev set, and provide performance metrics on a test set.
 
-    I. Invariant homographs 
+I. Invariant homographs 
     
-    Seventeen of the original WHD homographs have only one pronunciation. These invariant homographs are removed so as not to bolster model scores, as the models would correctly pick the only class available. They are as follows:
+Seventeen of the original WHD homographs have only one pronunciation. These invariant homographs are removed so as not to bolster model scores, as the models would correctly pick the only class available. They are as follows:
 
-    1.  addict
-    2.  compact
-    3.  consort
-    4.  desert
-    5.  elaborate
-    6.  entrance
-    7.  incense
-    8.  instrument
-    9.  interchange
-    10.  intimate
-    11.  job
-    12.  moped
-    13.  mouth
-    14.  object
-    15.  pigment
-    16.  row
-    17.  subject
+1.  addict
+2.  compact
+3.  consort
+4.  desert
+5.  elaborate
+6.  entrance
+7.  incense
+8.  instrument
+9.  interchange
+10.  intimate
+11.  job
+12.  moped
+13.  mouth
+14.  object
+15.  pigment
+16.  row
+17.  subject
 
-    II. Prohibitively low resource homographs
+II. Prohibitively low resource homographs
     Data for a further seventeen homographs is removed as these homographs include at least one pronunciation class with fewer than three instances. These homographs are as follows:
 
-    1.  abstract
-    2.  appropriate
-    3.  august
-    4.  bologna
-    5.  conglomerate
-    6.  console
-    7.  contract
-    8.  contrast
-    9.  deviate
-    10.  expatriate
-    11.  house
-    12.  jesus
-    13.  mate
-    14.  moderate
-    15.  predicate
-    16.  project
-    17.  ravel
+1.  abstract
+2.  appropriate
+3.  august
+4.  bologna
+5.  conglomerate
+6.  console
+7.  contract
+8.  contrast
+9.  deviate
+10.  expatriate
+11.  house
+12.  jesus
+13.  mate
+14.  moderate
+15.  predicate
+16.  project
+17.  ravel
 
-    After the removal of data for the 34 homographs, the remaining Wikipedia Homograph Data contains 128 unique homographs, 256 unique pronunciations and 12,714 samples. **34 from the remaining 128 homographs are selected as the focus of the empirical investigation on label imputation in the dissertation, and are represented in this dataset.** The homographs are chosen due to the following characteristics: 1) they exhibit greater-than-not class imbalance, with a median imbalance in the set of 88:12 samples per pronunciation, and 2) additional data was found in the French English Europarl datset for them. These homographs are as follows: 
+After the removal of data for the 34 homographs, the remaining Wikipedia Homograph Data contains 128 unique homographs, 256 unique pronunciations and 12,714 samples. **34 from the remaining 128 homographs are selected as the focus of the empirical investigation on label imputation in the dissertation, and are represented in this dataset.** The homographs are chosen due to the following characteristics: 1) they exhibit greater-than-not class imbalance, with a median imbalance in the set of 88:12 samples per pronunciation, and 2) additional data was found in the French English Europarl datset for them. These homographs are as follows: 
 
-    1. abuse
-    2. abuses
-    3. advocate
-    4. alternate
-    5. approximate
-    6. associate
-    7. close
-    8. confines
-    9. conflict
-    10. construct
-    11. content
-    12. contest
-    13. convict
-    14. degenerate
-    15. delegate
-    16. deliberate
-    17. lead
-    18. live
-    19. lives
-    20. misuse
-    21. perfect
-    22. pervert
-    23. present
-    24. produce
-    25. protest
-    26. record
-    27. recount
-    28. separate
-    29. supplement
-    30. suspect
-    31. upset
-    32. uses
-    33. wind
-    34. winds
+1. abuse
+2. abuses
+3. advocate
+4. alternate
+5. approximate
+6. associate
+7. close
+8. confines
+9. conflict
+10. construct
+11. content
+12. contest
+13. convict
+14. degenerate
+15. delegate
+16. deliberate
+17. lead
+18. live
+19. lives
+20. misuse
+21. perfect
+22. pervert
+23. present
+24. produce
+25. protest
+26. record
+27. recount
+28. separate
+29. supplement
+30. suspect
+31. upset
+32. uses
+33. wind
+34. winds
 
 Each of these selected 34 homographs has 2 pronunciations which makes for a total of 68 pronunciation classes represented across 3,407 samples split into 80% train, 10% dev, 10% test. See the Dataset composition section above for more.
     
