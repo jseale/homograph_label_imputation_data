@@ -558,25 +558,25 @@ During the above process, the researcher hand-labeled the 2,891 samples, 322 of 
 **French English Europarl**
 To create the semi-automatedly imputed data for the `train_euro` data split, the English and French, sentence-aligned Europarl corpus (Koehn, 2005) was culled to 202,968 parallel sentences (about 10% of the total corpus), each of which include a WHD homograph. Of those 202,968 up to 50 samples for each homograph were randomly sampled and 1,804 of those were word aligned using Jalili Sabet et al.’s (2020) `SimAlign` algorithm. The samples were then hand-labeled with WHD pronunciation labels by the researcher. During the manual labeling, a token alignment check was performed to determine the accuracy of the `SimAlign` interlingual token alignment, and inaccurate mappings were thrown out. The accuracy check was done using personal knowledge of French, and by referencing Google Translate when questions arose. Finally, French tokens found to align with WHD homographs that have a sense or sense set for which a WHD homonym pronunciation label is not available were also discarded. In the end, labeled samples for about 70% of the homographs in the final WHD splits are obtained, and 34 of those homographs were found to meet the condition of having one low prevalence pronunciation class. This determined the set of 34 homographs used throughout the study. A dictionary was made from the manual mapping of English homograph pronunciations and aligned French text word forms. The dictionary was used to automatedly label the rest of the 202,968 sentences found to include a WHD homograph. Because some aligned French tokens were mapped to multiple homographs, the keys of the dictionary consist of each English homograph and French token pair, while the values contain the pronunciation label for the English homograph. Using the dictionary in a script, aligned French and English homograph tokens were checked against the keys, and labeled samples were generated. A subset of the imputed samples have homographs with one low prevalence class, and were selected to augment the WHD training data set. While about 50% of the aligned token--class pairs have imputed labels for ten or fewer samples, there are pairs with large numbers of samples, the largest sample size being 220 for the homograph, _present_, with the aligned token, _présenter_, and the label /ˌpɹi:'zɛnt/. In order not to introduce too great an imbalance into the data (though ideally the sample sizes would remain reflective of the actual underlying distributions), up to forty samples for each French alignment to homograph pronunciation pair were randomly selected from the data to be used for augmentation. Note that this did not restrict the number of imputed label samples to 40 per pronunciation classas there can be multiple alignment pairs per pronunciation. This subsampling affected four homographs, _close_, _live_, _lives_, and _present_ with eight alignment pairs:  one for _close_, three for _live_, two for _lives_, and two for _present_.  After subsampling, 718 label-imputed samples targeting low resource pronunciation classes are obtained with a minimum of one sample per class, and a maximum of 130 samples per class. About 50% of the data had 10 or fewer samples per class. To create the augmented training data split, the label-imputed data was shuffled in to a copy of the 34-homograph WHD train split. This increased the train data set size by about 20%, from 2,719 to 3,437 samples. There is an absolute change in class sample size in the range of anywhere from 1 to 130 samples, with 75% of the classes gaining 21 samples or fewer. The mean relative change in sample size is 253%, with 75% of the classes increasing by 116% or less.
 
-3. _Who was involved in the data collection process?_
+2. _Who was involved in the data collection process?_
 
     The researcher, Jen Seale, under the advisement of her dissertation committee at the CUNY Graduate Center: Professors William Sakas, Kyle Gorman, and Alla Rosovskaya.
-5. _Over what time-frame was the data collected?_
+3. _Over what time-frame was the data collected?_
 
     The data was collected over a few months time in 2021.
-7. _How was the data associated with each instance acquired?_
+4. _How was the data associated with each instance acquired?_
 
     Through hand-labeling and label imputation.
-8. _Does the dataset contain all possible instances?_
+5. _Does the dataset contain all possible instances?_
 
     No. All of the labeled data is subset, either to alleviate invariance, to redudce imbalance, or to reduce the problem space to clearly examine the effects of training with label-imputed data.
-10. _If the dataset is a sample, then what is the population?_
+6. _If the dataset is a sample, then what is the population?_
 
     The population is the complete the Wikipedia Homograph Data, combined with the unknown number of sentences in both the NXT Switchboard data and French English Europarl data that contain WHD homographs.
-12. _Is there information missing from the dataset and why?_
+7. _Is there information missing from the dataset and why?_
 
     Due to time and computation constraints, smaller amounts of data are generated during label imputation. Augmenting with this smaller amount of data still shows an increase in model balanced accuracy and provides evidence towards the efficacy of the label imputation techniques.
-14. _Are there any known errors, sources of noise, or redundancies in the data?_
+8. _Are there any known errors, sources of noise, or redundancies in the data?_
 
     At the time of writing, there are six known errors in the WHD for the homograph, _close_. In addition, all of the labels for the homograph _pasty_ in the WHD should be switched, the one pronunciation for the other. Fixes for these errors will be pushed to the Wikipedia Homograph Data GitHub repo.
 
