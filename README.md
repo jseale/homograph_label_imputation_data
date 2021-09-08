@@ -11,17 +11,17 @@ There are three folders of data in this repo:
 This README is structured using the template provided in [Datasheets for Datasets](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/1803.09010.pdf) as recommended for use by the Association for Computational Lingustics (ACL).
 
 ## Motivation
-1. _Why was this dataset created?_
+1. _Why were these datasets created?_
 
-    This dataset was created for the purpose of homograph disambiguation modeling done to evaluate the effectiveness of two types of label imputation for homograph disambiguation: 1) label imputation from transcribed audio of conversational speech, 2) label imputation from parallel corpora. In the experiments, machine learning models are trained using the WHD train and dev splits alone, and then trained with the various train splits augmented using either label-imputed or hand-labeled data (and the non-augmented dev split) for comparison. The WHD-only test split is held out in order to report final metrics.
+    These datasets were created for the purpose of homograph disambiguation modeling done to evaluate the effectiveness of two types of label imputation for homograph disambiguation: 1) label imputation from transcribed audio of conversational speech, 2) label imputation from parallel corpora. In the experiments, machine learning models are trained using the WHD train and dev splits alone, and then trained with the various train splits augmented using either label-imputed or hand-labeled data (and the non-augmented dev split) for comparison. The WHD-only test split is held out in order to report final metrics.
 
-2. _Has this dataset been used for any tasks already? If so, what (other) tasks could this dataset be used for?_
+2. _Have these datasets been used for any tasks already? If so, what (other) tasks could these datasets be used for?_
  
-    For the `ALBERT`, `BERT`, and `XLNet` models trained in the dissertation, the task is framed as token classification, or NER. The task could also be framed as contextualized homograph pronunciation classification in which the homograph, vectorized with its surrounding text is classified.
+    For the `ALBERT`, `BERT`, and `XLNet` homograph disambiguation models trained in the dissertation, the task is framed as token classification, or NER. The task could also be framed as contextualized homograph pronunciation classification in which the homograph, vectorized with its surrounding text is classified.
 
-3. _Who funded the creation of the dataset?_
+3. _Who funded the creation of these datasets?_
 
-     This dataset was created during the dissertation of CUNY Graduate Center doctoral candidate, Jen Seale, whose studies at the university were primarily funded through a Presidential Research Fellowship. 
+     These datasets were created during the dissertation work of CUNY Graduate Center doctoral candidate, Jen Seale, whose studies at the university were primarily funded through the university's Presidential Research Fellowship. 
 
 ## Dataset composition
 1. _What are the instances? What data does each instance consist of?_
