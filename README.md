@@ -583,12 +583,19 @@ To create the semi-automatedly imputed data for the `train_euro` data split, the
     The following samples for _close_ are all labeled with close_adj-nou, and should be labeled with close_vrb: 
 
     "NXP Semiconductors And Freescale Semiconductor Close Merger RTTNews."
+    
     "This time, Woolley held his side together with 76 and they were 172 for five at the close."
+    
     "In June 2010 it was announced that the Museum would close because of Lincolnshire County Council cuts."
+    
     "Ferrybridge and Eggborough power stations were scheduled to close in March 2016."
+    
     "Blue doors close at the end of the current wave of enemies, but green ones remain open."
+    
     "At the close of each episode, Burnett tugged her ear."
+    
     "In May 2010 Cardiff University announced that the Academy would close because of a lack of funds."
+    
     "It is designated "Trap Town" at the close of the 18th century by Griffith (1795)."
 
     Some of the errors are possibly made in part due to the use of POS in the wordid/labeling convention. The label _close_adj-nou_ indicates the /'kloʊs/ pronunciation, while the label _close_vrb_ indicates the /'kloʊz/ pronunciation.
@@ -600,38 +607,40 @@ To create the semi-automatedly imputed data for the `train_euro` data split, the
     
 2. _Was the "raw" data saved in addition to the preprocessed/cleaned data?_
 
-    Yes, this dataset constitutes the "raw" data.
+    Yes, these datasets constitute the "raw" data.
 4. _Is the preprocessing software available?_
 
     There are not plans to make the code available. 
 6. _Does this dataset collection/processing procedure acheive the motivation for creating the dataset?_
 
-    Yes. Homograph disambiguation modeling with this dataset provideds
+    Yes. Homograph disambiguation modeling with this dataset provided evidence towards the efficacy of the label imputation techniques.
 
 ## Data distribution
-1. _How is the dataset distributed?_
+1. _How is the data distributed?_
 
-    This data is redundantly archived in the [CUNY Graduate Center Creative Commons repository](), in addition to this GitHub repo. The dissertation associated with this work is available [here]().  
-2. _When will the dataset be released/first distributed?_
+    This data is provided in this GitHub repo. The dissertation associated with this work is available [here](). 
+    
+2. _When will the data be released/first distributed?_
 
-    This dataset will first be released in September 2021.
+    This data will first be released in September 2021.
+    
 4. _What license (if any) is it distributed under?_
 
-    This dataset is distributed under the MIT license.
+    This data is distributed under the MIT license.
 
 ## Dataset maintenance
 1. _Who is supporting/hosting/maintaining the dataset?_
 
     You can contact Jen for support via email: jennifer.seale@gmail.com.
-2. _Will the dataset be updated?_
+2. _Will the data be updated?_
 
     There are no current plans for this data to be updated. Fixes to, and rebalancing of, the Wikipedia Homograph Data are being pushed to a fork of the Google WikipediaHomographData repo, [here](https://github.com/google/WikipediaHomographData).
 3. _If the dataset becomes obsolete how will this be communicated?_
 
-    This dataset is an artifact associated with work done for a dissertation, and in that respect will not become obsolete. Should better metadata or additional related datasets become available, it will be communicated in this GitHub repo on this README.
+    This data is an artifact associated with work done for a dissertation, and in that respect will not become obsolete. Should better metadata or additional related datasets become available, it will be communicated in this GitHub repo on this README.
 4. _Is there a repository to link to any/all papers/systems that use this dataset?_
 
-    At this time only one paper, the dissertation, has used this dataset. There is no current plan to link all papers and systems that may use this dataset in future.
+    At this time only one paper, the dissertation, has used this data. There is no current plan to link all papers and systems that may use this dataset in future.
 
 5. _If others want to extend/augment/build on this dataset, is there a mechanism for them to do so?_
 
