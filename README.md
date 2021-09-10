@@ -578,7 +578,7 @@ To create the semi-automatedly imputed data for the `train_euro` data split, the
     Due to time and computation constraints, smaller amounts of data are generated during label imputation. Augmenting with this smaller amount of data still shows an increase in model balanced accuracy and provides evidence towards the efficacy of the label imputation techniques.
 8. _Are there any known errors, sources of noise, or redundancies in the data?_
 
-    At the time of writing, there are six known errors in the WHD for the homograph, _close_. In addition, all of the labels for the homograph _pasty_ in the WHD should be switched, the one pronunciation for the other. Fixes for these errors will be pushed to the Wikipedia Homograph Data GitHub repo.
+    At the time of writing, there are eight known errors in the WHD for the homograph, _close_. In addition, all of the labels for the homograph _pasty_ in the WHD should be switched, the one pronunciation for the other. Fixes for these errors will be pushed to the Wikipedia Homograph Data GitHub repo.
 
     The following samples for _close_ are all labeled with close_adj-nou, and should be labeled with close_vrb: 
 
