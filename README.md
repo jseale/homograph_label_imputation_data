@@ -1,7 +1,7 @@
 # Homograph label imputation data
 This repository contains labeled homoograph pronunciation data with sentential context from the [Wikipedia Homograph Data](https://github.com/google/WikipediaHomographData) (WHD; Gorman et al., 2018), the Switchboard corpus (SWBD; Godfrey et al., 1992), and the French English Europarl corpus (Koehn, 2005). 
 
-The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, is to be deposited in September 2021. 
+The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited September 2021, and available [here](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5591&context=gc_etds). 
 
 There are three folders of data in this repo: 
 1) `Dissertation_Experiment_Data` contains the homograph disambiguation data used in dissertation experimentation. There are four different `train` splits, one `dev` and one `test` split. All these splits contain data for 68 pronunciation classes over 34 WHD homographs.
@@ -618,7 +618,7 @@ To create the semi-automatedly imputed data for the `train_euro` data split, the
 ## Data distribution
 1. _How is the data distributed?_
 
-    This data is provided in this GitHub repo. The dissertation associated with this work is available [here](). 
+    This data is provided in this GitHub repo. The dissertation associated with this work is available [here](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5591&context=gc_etds). 
     
 2. _When will the data be released/first distributed?_
 
