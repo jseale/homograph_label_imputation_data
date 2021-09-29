@@ -4,6 +4,7 @@ This repository contains labeled homoograph pronunciation data with sentential c
 The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited September 2021, is available [here](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5591&context=gc_etds). 
 
 If you use this data, please cite: 
+
 Seale, Jennifer M., "Label Imputation for Homograph Disambiguation: Theoretical and Practical Approaches" (2021). CUNY Academic Works.
 https://academicworks.cuny.edu/gc_etds/4518
 
