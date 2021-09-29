@@ -3,6 +3,10 @@ This repository contains labeled homoograph pronunciation data with sentential c
 
 The datasets in this repo were generated during the dissertation work of Jen Seale, in which two kinds of homograph pronunication label imputation were developed and tested using machine learning homograph disambiguation models. Jen Seale's dissertation, Label imputation for homograph disambiguation: Theoretical and practical approaches, deposited September 2021, is available [here](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5591&context=gc_etds). 
 
+If you use this data, please cite: 
+Seale, Jennifer M., "Label Imputation for Homograph Disambiguation: Theoretical and Practical Approaches" (2021). CUNY Academic Works.
+https://academicworks.cuny.edu/gc_etds/4518
+
 There are three folders of data in this repo: 
 1) `Dissertation_Experiment_Data` contains the homograph disambiguation data used in dissertation experimentation. There are four different `train` splits, one `dev` and one `test` split. All these splits contain data for 68 pronunciation classes over 34 WHD homographs.
 3) `SWBD_Data` contains the full set of hand-labeled Switchboard data generated over the course of the dissertation. 
